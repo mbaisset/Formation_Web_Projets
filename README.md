@@ -5,13 +5,13 @@ The aim of this prohject is the development of a ToDoList app in the scope of th
 # Data base table creation
 The following scripts can be used for creating the ToDoList data base tables
 
-- *Creation of the new todolist schema in the database*
+- **Creation of the new todolist schema in the database**
 CREATE SCHEMA 'todolist' ;
  
-- *Removal of the tasks table from the database if already existing to perform a new installation* 
+- **Removal of the tasks table from the database if already existing to perform a new installation**
  drop table if exists tasks;
 
- - *Creation of the tasks table*
+ - **Creation of the tasks table**
 create table tasks (
 	idtask INT NOT NULL AUTO_INCREMENT,
 	taskname VARCHAR (45),
@@ -24,14 +24,14 @@ create table tasks (
 	);
 
 # Application configuration
-In the db_management/db_utils_mysql.js file, you will have to modify the user and password field values of the connectToMySQL function in order to correspond to the ones you are using
+In the `db_management/db_utils_mysql.js` file, you will have to modify the `<my_database_user>` and `<my_database_password>` values of the connectToMySQL function by the ones you are currently using
 
 ```
 function connectToMySQL() {
   var connection = mysql.createConnection({
     host: 'localhost',
-    user: 'my_database_user',
-    password: 'my_database_password',
+    user: '<my_database_user>',
+    password: '<my_database_password>',
     database: 'todolist'
   });
 ```
