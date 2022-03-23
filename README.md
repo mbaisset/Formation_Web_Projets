@@ -5,13 +5,13 @@ The aim of this prohject is the development of a ToDoList app in the scope of th
 # Data base table creation
 The following scripts can be used for creating the ToDoList data base tables
 
-- **Creation of the new todolist schema in the database**
+- **Creation of the new todolist schema in the database**  
 CREATE SCHEMA 'todolist' ;
  
-- **Removal of the tasks table from the database if already existing to perform a new installation**
+- **Removal of the tasks table from the database if already existing to perform a new installation**  
  drop table if exists tasks;
 
- - **Creation of the tasks table**
+ - **Creation of the tasks table**  
 create table tasks (
 	idtask INT NOT NULL AUTO_INCREMENT,
 	taskname VARCHAR (45),
