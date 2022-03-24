@@ -7,7 +7,7 @@ function connectToMySQL() {
   var connection = mysql.createConnection({
     host: 'localhost',
     user: '<my_database_user>',
-    password: '<my_database_password>!',
+    password: '<my_database_password>',
     database: 'todolist'
   });
 
