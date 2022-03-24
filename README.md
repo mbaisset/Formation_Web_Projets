@@ -1,5 +1,10 @@
 # Formation_Web_Projets
-The aim of this prohject is the development of a ToDoList app in the scope of the SGCIB reskilling training session
+The aim of this prohject is the development of a ToDoList app in the scope of the SGCIB reskilling training session.
+This one is developped in HTML and Javascript.
+
+# Architecture of the project
+
+
 
 
 # Data base table creation
@@ -29,6 +34,18 @@ CREATE TABLE tasks (
 	);
 ```
 
+# Additional modules to be installed via npm  
+The additional modules required to run the ToDoList application are listed in the `package.json` file  
+
++ ## Installation of Express module  
+The express module is used for managing the web framework of the prohect.  
+The official documentation is available here: [express js](http://expressjs.com/ "express js official website")
+
+The express module can be installed by running the following command 
+```
+npm install express --save
+```
+
 # Application configuration
 In the `db_management/db_utils_mysql.js` file, you will have to modify the `<my_database_user>` and `<my_database_password>` values of the connectToMySQL function by the ones you are currently using
 
@@ -45,7 +62,7 @@ function connectToMySQL() {
 # Unit Tests
 The test folder contains unit tests for the formatTaskStatusNumberToText and formatTaskStatusTextToNumber functions
 
-These ones are run via [mocha](https://mochajs.org/ "mocha official site")
+These ones are run via [mocha](https://mochajs.org/ "mocha official website")
 
 In order to run these ones, you might need to install mocha via npm by using the following commande in the command prompt:  
 ```npm install --global mocha```
