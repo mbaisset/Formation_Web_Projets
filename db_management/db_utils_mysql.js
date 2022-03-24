@@ -6,8 +6,8 @@ const { NULL } = require('mysql/lib/protocol/constants/types');
 function connectToMySQL() {
   var connection = mysql.createConnection({
     host: 'localhost',
-    user: 'root',
-    password: 'Welcome01!',
+    user: '<my_database_user>',
+    password: '<my_database_password>!',
     database: 'todolist'
   });
 
