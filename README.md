@@ -71,7 +71,7 @@ npm install express --save
 ```
 
 + ### Installation of mysql module  
-The express module is used for managing the connection to the mysql database and to send SQL request to the mysql database.  
+The mysql module is used for managing the connection to the mysql database and to send SQL request to the mysql database.  
 The official documentation is available here: [mysql](https://www.npmjs.com/package/mysql/ "mysql official website")
 
 The mysql module can be installed by running the following command 
@@ -101,7 +101,7 @@ function connectToMySQL() {
 ```
 node app_task_manager_server.js
 ```
-6. If the server is launched with success, you should see the following message in the command prompt
+6. If the server is launched successfully, you should see the following message in the command prompt
 ```
 Task manager app listening on port 3000
 ```
@@ -126,6 +126,6 @@ In order to run these ones, you might need to install mocha via npm by using the
 - ### Integration tests
 An example of integration test was created for cypress (toDoList.js)
 
-The express module is used for managing the connection to the mysql database and to send SQL request to the mysql database.  
+Cypress tool is used for running integration test  
 The official documentation is available here: [cypress](https://docs.cypress.io "cypress official website")
 
