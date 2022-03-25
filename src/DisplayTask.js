@@ -56,8 +56,8 @@ function taskCard (values){
                     <div class="form-group">
                         <div class="row justify-content-center">
                             <div>
-                                <label for="startDate"><strong>Start date:</strong></label>
-                                <input ${readonlyField} required min="${fd.formatDate(new Date())}" name="startdate" id="startDate" class="form-control" value="${fd.formatDate(new Date (values['startdate']))}" type="date" />
+                                <label for="startDateModifPossible"><strong>Start date:</strong></label>
+                                <input ${readonlyField} required  name="startdate" id="startDateModifPossible" class="form-control" value="${fd.formatDate(new Date (values['startdate']))}" type="date" />
                             </div>
                         </div>
                     </div>
@@ -65,8 +65,8 @@ function taskCard (values){
                     <div class="form-group">
                         <div class="row justify-content-center">
                             <div>
-                                <label for="estimatedenddate"><strong>Estimated end date:</strong></label>
-                                <input ${readonlyField} required min="${fd.formatDate(new Date())}" name="estimatedenddate" id="estimatedenddate" class="form-control" value="${fd.formatDate(new Date (values['estimatedenddate']))}" type="date" />
+                                <label for="estimatedEndDateModifPossible"><strong>Estimated end date:</strong></label>
+                                <input ${readonlyField} required  name="estimatedenddate" id="estimatedEndDateModifPossible" class="form-control" value="${fd.formatDate(new Date (values['estimatedenddate']))}" type="date" />
                             </div>
                         </div>
                     </div>
