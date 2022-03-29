@@ -37,10 +37,12 @@ function taskCard (values){
         readonlyField = "readonly"
     }
 
+    let cardBackground = manageCardBackground (values)
+
 
     let html = `
         <div class="col ">
-            <div class="h-100 p-3 border bg-light rounded-3 ">
+            <div class="h-100 p-3 border ${cardBackground} rounded-3 ">
                 <form method="post" enctype="application/x-www-form-urlencoded">
                     <div class="form-group" style="display: none;">
                         <input name="idtask" class="form-control" id="idtask" value="${values['idtask']}">
@@ -115,6 +117,24 @@ function taskCard (values){
     `
 
     return html
+}
+
+function manageCardBackground (values){
+    let cardBackground = ""
+
+    switch (values.taskstatus) {
+        case fd.NUM_ONGOING_TASK: 
+            return "bg-light"
+
+        case fd.NUM_BLOCKED_TASK:
+            return "bg-warning"
+
+        case fd.NUM_DONE_TASK:
+            return "bg-success"
+        
+        default:
+            return "bg-danger"
+    }
 }
 
 
