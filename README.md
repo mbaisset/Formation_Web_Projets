@@ -109,9 +109,14 @@ Task manager app listening on port 3000
 ```
 http://localhost:3000/
 ```
-8. By default, the application will display the ongoing tasks page
+8. By default, the application will display the ongoing tasks page.
 9. A new task can be created via the "Add a task" button
 10. Once the new task is created successfully, the application will by default display the ongoing tasks page
+11. By clicking on the display buttons ("View All Tasks", "View Ongoing Tasks", "View Blocked Tasks" and "View Done Tasks"), the display will be as follow:
+- **View All Tasks:** Display all the tasks whatever the status of the task is. The tasks are sorted by descending "start Date" and in case of equal "Start Date", it will be also sorted by Ascending "Estimated End Date". If no task is available to diplay, the "No task to display" message will be displayed on the screen  
+- **View Ongoing Tasks:** Display only the tasks that have the "Ongoing" status. The tasks are sorted by descending "start Date" and in case of equal "Start Date", it will be also sorted by Ascending "Estimated End Date". If no task is available to diplay, the "No task to display" message will be displayed on the screen  
+- **View Blocked Tasks:** Display only the tasks that have the "Blocked" status. The tasks are sorted by descending "start Date" and in case of equal "Start Date", it will be also sorted by Ascending "Estimated End Date". If no task is available to diplay, the "No task to display" message will be displayed on the screen  
+- **View Done Tasks:** Display only the tasks that have the "Done" status. The tasks are sorted by descending "start Date" and in case of equal "Start Date", it will be also sorted by Ascending "Estimated End Date". If no task is available to diplay, the "No task to display" message will be displayed on the screen  
 
 ## Tests <a name="test"></a>
 
