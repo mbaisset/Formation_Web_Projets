@@ -87,7 +87,7 @@ function taskCard (values){
             </div>
             <br/>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <button type="submit" formaction="/reopenDoneTask" class="btn btn-primary me-md-2" type="button">Reopen</button>
+                <button type="submit" formaction="/reopenDoneTask" class="btn btn-info me-md-2" type="button">Reopen</button>
             </div>
         `
     } else {
@@ -104,8 +104,8 @@ function taskCard (values){
                 </div>
                 <br/>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <button type="submit" formaction="/modifyTask" class="btn btn-primary me-md-2" type="button">Modify</button>
-                    <button type="submit" formaction="/doneTask" class="btn btn-primary">Done</button>
+                    <button type="submit" formaction="/modifyTask" class="btn btn-info me-md-2" type="button">Modify</button>
+                    <button type="submit" formaction="/doneTask" class="btn btn-info">Done</button>
                 </div>
             `
     }
@@ -124,7 +124,7 @@ function manageCardBackground (values){
 
     switch (values.taskstatus) {
         case fd.NUM_ONGOING_TASK: 
-            return "bg-light"
+            return "bg-primary"
 
         case fd.NUM_BLOCKED_TASK:
             return "bg-warning"
