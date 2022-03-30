@@ -135,8 +135,8 @@ function taskForm(){
     let html = `
         <form method="post" action="/addTask" enctype="application/x-www-form-urlencoded">
             <div class="form-group">
-                <label for="addnewtask">Task name:</label>
-                <input required name="taskname" class="form-control" id="addnewtask" placeholder="name of the task">
+                <label for="taskname">Task name:</label>
+                <input required name="taskname" class="form-control" id="taskname" placeholder="name of the task">
             </div>
             <div class="form-group">
                 <label for="taskdescription">Task description:</label>
